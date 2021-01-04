@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">ALS OBD</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name_wifi">WIFI OBD</string>
+    <string name="app_name_wired">Wired OBD</string>
+    <string name="welcome_to_als">Welcome to ALS</string>
+    <string name="als_obd">ALS OBD</string>
+
+    <string name="app_name_serial">ELD_Serial</string>
+    <string name="refresh_list">refresh List</string>
+    <string name="connecting">connecting</string>
+    <string name="_zero">0</string>
+
+    <!-- Ignition status -->
+    <string name="ignition_on">ON</string>
+    <string name="ignition_off">OFF</string>
+
+    <!-- Netutil-->
+    <string name="open_wifi_setting_title">Turn on network services</string>
+    <string name="open_wifi_setting_content">Network is not connected, can\'t sync time. Please go to the Settings for connect network!</string>
+
+
+    <!-- Log string, no translate-->
+    <string name="_receive">receive</string>
+    <string name="_connect">connect</string>
+    <string name="_disconnect">disconnect</string>
+    <string name="_export_start">export data start</string>
+    <string name="checkUpdate">Check Update</string>
+    <string name="installUpdate">Install Update</string>
+
+
+    <string name="toast_request_data_sync_success">Request data sync,now is start.Please wait</string>
+    <string name="toast_request_data_sync_fail">Fail when request data sync.Please retry</string>
+    <string name="toast_data_sync_success">Data sync complete</string>
+
+    <string name="toast_set_sleep_delay_success">Set sleep delay success</string>
+    <string name="toast_set_sleep_delay_failed">Failed to set sleep delay</string>
+
+    <string name="toast_set_device_sn_success">Set device SN success</string>
+    <string name="toast_set_device_sn_failed">Failed to set device SN</string>
+
+    <string name="toast_send_to_eld_device_invalid">Command is invalid when send to eld device</string>
+
+    <string name="toast_set_work_mode_success">Set work mode success</string>
+    <string name="toast_set_work_mode_failed">Failed to set work mode</string>
+
+    <string name="toast_set_bus_protocol_success">Set bus protocol success</string>
+    <string name="toast_set_bus_protocol_failed">Failed to set bus protocol</string>
+
+    <string name="toast_clear_database_success">Clear database success</string>
+
+
+    <!-- Toast -->
+    <string name="toast_wait_when_read_data">Reading data from database,please wait a moment</string>
+    <string name="toast_exit_app">Click Key-Back again to exit</string>
+    <string name="toast_export_data">Export to ELD_Log directory</string>
+    <string name="toast_pick_time_error">End time must bigger then begin time</string>
+    <string name="toast_pick_time_invalid">Invalid time</string>
+    <string name="toast_sleep_time_too_big">Out of limit</string>
+    <string name="toast_input_correct">Please input a correct number</string>
+    <string name="toast_time_sync_success">Time synchronization succeeded</string>
+    <string name="toast_time_sync_fail">Time synchronization failed</string>
+    <string name="toast_time_sync_retry">Time synchronization connection fails, try again later.</string>
+    <string name="toast_time_sync_should_connect_network">Network is not connected, can\'t sync time. Please connect network!</string>
+    <string name="toast_time_sync_should_connect_device">Please connect bluetooth device</string>
+    <string name="toast_request_some_failed">Get permission successful, some permissions were not granted normally.</string>
+    <string name="toast_request_denied">Authorization has been permanently denied. Please manually grant permission.</string>
+    <string name="toast_request_failed">Failed to get permission</string>
+
+
+    <!-- Settings -->
+    <string name="device">Device</string>
+    <string name="sdcard">sdcard/</string>
+    <string name="setting">Setting</string>
+    <string name="_set">SET</string>
+    <string name="_null">null</string>
+    <string name="_sync">Now is sync</string>
+    <string name="_cancel">Cancel</string>
+    <string name="_ok">OK</string>
+    <string name="_year">(year)</string>
+    <string name="_month">(month)</string>
+    <string name="_day">(day)</string>
+    <string name="_hour">(hour)</string>
+    <string name="_minute">(minute)</string>
+    <string name="_second">(second)</string>
+
+
+    <!-- Data sync form-->
+    <string name="data_sync_begin_title">Data Sync</string>
+    <!--<string name="_from">from</string>-->
+    <!--<string name="data_sync_begin_button">Begin</string>-->
+    <!--<string name="_to">to</string>-->
+    <!--<string name="data_sync_end_button">End</string>-->
+    <!--<string name="data_sync_dialog_title">Date&amp;Time(Day,Hour,Minute)</string>-->
+    <string name="data_sync_button">Sync</string>
+    <string name="data_sync_30min">30 min</string>
+    <string name="data_sync_12hour">12 hour</string>
+    <string name="data_sync_1day">1 day</string>
+    <string name="data_sync_3day">3 day</string>
+    <string name="data_sync_7day">7 day</string>
+    <string name="data_sync_8day">8 day</string>
+
+
+    <!-- time sync setting -->
+    <string name="time_sync_title">Time Sync</string>
+    <string name="timesync_button">Time Sync</string>
+
+    <!--sleep delay -->
+    <string name="sleep_delay_title">Sleep Delay</string>
+    <string name="_20min">20min</string>
+
+    <!-- Export Data Setting-->
+    <string name="export_data_title">Export Data</string>
+    <string name="export_button">Export</string>
+    <string name="default_path">Default Path</string>
+    <string name="storage_mode_title">Storage Mode</string>
+    <string name="always_storage_switch">Always Storage</string>
+
+    <!-- Box version -->
+    <string name="box_version_title">Box Version</string>
+
+    <!-- Engine number setting-->
+    <string name="engine_number_title">EngineNumber</string>
+    <!--<string name="set_engine_number_button">Set Engine Number</string>-->
+
+    <!--Odometer Setting -->
+    <string name="odometer_title">Odometer</string>
+    <!--<string name="set_odometer_button">Set Odometer</string>-->
+
+    <!-- OTA Setting -->
+    <string name="device_ota_title">Device OTA</string>
+    <string name="btn_ota_button">OTA</string>
+
+    <!-- OTA -->
+    <string name="ota_no_device">no device connected</string>
+    <string name="btn_start_ota">Start OTA</string>
+    <string name="btn_open_ota_file">Open File</string>
+    <string name="ota_device_name_title">Device Name</string>
+    <string name="ota_file_name_title">OTA File Name</string>
+    <string name="ota_file_version">Please select a file</string>
+    <string name="ota_file_no_found">File unavailible</string>
+    <string name="ota_status_title">OTA Status</string>
+    <string name="ota_progress_title">OTA Progress</string>
+
+
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainPopLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_white"
+    >
+    
+
+    
+    <RelativeLayout
+        android:id="@+id/viewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_default"
+        android:layout_marginRight="9dp"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="15dp"
+      
+>
+
+        
+           <TextView 
+            android:id="@+id/changeTitleView"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Confirmation"
+            android:layout_centerHorizontal="true"
+            android:textSize="23sp"
+            android:layout_marginTop="22dp"
+			android:textColor="@color/colorPrimaryDark"
+               android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:id="@+id/titleDescView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/changeTitleView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="Do you really want to cancel download ?"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+
+           <LinearLayout
+            android:id="@+id/btnLinLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+         android:layout_below="@+id/titleDescView"
+             android:orientation="horizontal"
+             android:layout_marginLeft="18dp"
+             android:layout_marginRight="18dp"
+               android:layout_alignParentRight="true"
+            >
+            
+               
+
+                     <!-- android:background="@drawable/edtittext_border"-->
+              <TextView
+                  android:id="@+id/cancelPopupButton"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:text="No"
+                 android:layout_margin="1dp"
+                  android:textColor="@color/colorPrimary"
+                  android:textStyle="bold"
+                  android:textSize="18sp"
+                  android:layout_marginRight="10dp"
+                  android:padding="10dp"
+
+                  />
+
+           
+
+              <TextView
+                  android:id="@+id/confirmPopupButton"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:text="Yes"
+                  android:textStyle="bold"
+                 android:layout_margin="1dp"
+                  android:textColor="@color/colorPrimaryDark"
+                  android:textAllCaps="false"
+                  android:textSize="18sp"
+                  android:padding="10dp"
+
+
+                  />
+
+           
+                   
+             
+        </LinearLayout>
+        
+           
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text="@string/als_obd"
+        android:textColor="@color/material_white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="22sp"
+        android:background="@color/colorPrimary"
+
+        />
+
+
+
+
+
+
+    <Button
+        android:id="@+id/wifiBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WIFI OBD"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:visibility="gone"
+
+        />
+
+
+
+    <Button
+        android:id="@+id/wiredBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wired OBD"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:visibility="gone"
+        />
+
+
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/item_obbd_details"
+        android:layout_marginTop="50dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/welcomeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/welcome_to_als"
+        android:textColor="@color/colorPrimary"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="80dp"
+        android:textSize="30sp"
+
+        />
+    <!--
+
+        <com.joanzapata.pdfview.PDFView
+            android:id="@+id/pdfView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    -->
+
+
+
+    <RelativeLayout
+        android:id="@+id/checkAppUpdateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:padding="8dp"
+
+
+        >
+
+        <TextView
+            android:id="@+id/checkAppUpdateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkUpdate"
+            android:textColor="@color/material_white"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            />
+
+
+
+        <ProgressBar
+            android:id="@+id/downloadProgressBar"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/versionTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/material_black"
+        android:textSize="16sp"
+        android:text="Version 1.1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+
+        />
+
+
+
+
+
+</RelativeLayout>

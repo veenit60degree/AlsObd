@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/gpsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS"
+            android:layout_margin="6dp"
+            />
+
+
+        <Button
+            android:id="@+id/canBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Truck Info"
+            android:layout_margin="6dp"
+            />
+
+
+
+        <Button
+            android:id="@+id/restartBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restart OBD"
+            android:layout_margin="6dp"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dataTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:hint="No data found"
+        android:textColor="#000"
+        />
+
+        <TextView
+            android:id="@+id/obdRawDataTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:hint="OBD raw data"
+            android:textColor="#199cdd"
+
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

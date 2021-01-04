@@ -1,0 +1,125 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 3,
+    "identityHash": "917705d05bc8ffb6c53f708bfc49cfb1",
+    "entities": [
+      {
+        "tableName": "ELD_DATA",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`RPM` INTEGER NOT NULL, `VSS` INTEGER NOT NULL, `TIME_STAMP` INTEGER NOT NULL, `Trip_Distance` INTEGER NOT NULL, `Odometer` INTEGER NOT NULL, `ENGINE_Hours` REAL NOT NULL, `High_Precision_Odometer` INTEGER NOT NULL, PRIMARY KEY(`TIME_STAMP`))",
+        "fields": [
+          {
+            "fieldPath": "RPM",
+            "columnName": "RPM",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "VSS",
+            "columnName": "VSS",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "TIME_STAMP",
+            "columnName": "TIME_STAMP",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "Trip_Distance",
+            "columnName": "Trip_Distance",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "Odometer",
+            "columnName": "Odometer",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ENGINE_Hours",
+            "columnName": "ENGINE_Hours",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "High_Precision_Odometer",
+            "columnName": "High_Precision_Odometer",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "TIME_STAMP"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_ELD_DATA_TIME_STAMP",
+            "unique": false,
+            "columnNames": [
+              "TIME_STAMP"
+            ],
+            "createSql": "CREATE  INDEX `index_ELD_DATA_TIME_STAMP` ON `${TABLE_NAME}` (`TIME_STAMP`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "StaticMessage",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`VIN` TEXT, `Engine_Number` TEXT, `TIME_STAMP` INTEGER NOT NULL, `Odometer_For_OBD` INTEGER NOT NULL, PRIMARY KEY(`TIME_STAMP`))",
+        "fields": [
+          {
+            "fieldPath": "VIN",
+            "columnName": "VIN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Engine_Number",
+            "columnName": "Engine_Number",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "TIME_STAMP",
+            "columnName": "TIME_STAMP",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "Odometer_For_OBD",
+            "columnName": "Odometer_For_OBD",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "TIME_STAMP"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_StaticMessage_TIME_STAMP",
+            "unique": false,
+            "columnNames": [
+              "TIME_STAMP"
+            ],
+            "createSql": "CREATE  INDEX `index_StaticMessage_TIME_STAMP` ON `${TABLE_NAME}` (`TIME_STAMP`)"
+          }
+        ],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"917705d05bc8ffb6c53f708bfc49cfb1\")"
+    ]
+  }
+}
